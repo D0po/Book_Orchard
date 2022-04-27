@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+html, body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  50vh 9vh 73vh 100vh 20vh;
+}
+
+header{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.ajuste0{
+    display: flex;
+    justify-content: center;
+   align-content: center;
+}
+
+header h1{
+    font-size: 4em;
+   color: chartreuse;
+}
+
+header img{
+    width: 70px;
+    height: 70px;
+}
+
+nav{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+ul.ttx{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5s;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius: 40px;
+}
+
+
+a:hover{
+    font-size: 20px;
+    background-color: #4CAF50;
+  color: white;
+}
+
+main{
+    color: white;
+    border: 3px solid white;
+    background-color: rgba(65, 65, 65, 0.904);
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+h2{
+    color:chartreuse;
+    display: flex;
+    justify-content: center;
+}
+
+main div{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main img{
+    margin-right: 10px;
+}
+
+section{
+    color: white;
+    border: 3px solid white;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin: 10px 0px;
+}
+
+.a001{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-content: center;
+    margin: 100px 100px;
+}
+
+.div1 {
+    display: flexbox;
+    align-content: space-between;
+    background-color: rgba(65, 65, 65, 0.904);
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+div.div1 img{
+    width:  350px;
+    height: 350px;
+}
+
+.div2 {
+    display: flexbox;
+    align-content: space-between;
+    background-color: rgba(65, 65, 65, 0.904);
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+div.div2 img{
+    width: 300px;
+    height: 300px;
+}
+
+.div3 {
+    display: flexbox;
+    align-content: space-between;
+    background-color: rgba(65, 65, 65, 0.904);
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+
+div.div3 img{
+    width: 400px;
+    height: 200px;
+}
+
+footer{
+    color: white;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-top: 35px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+.ajuste1{
+    display: flex;
+    justify-content: center;
+   align-content: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: rgba(65, 65, 65, 0.904);
+    margin: 10px 10px;
+}
+
+.none{
+    border: none;
+}
+
+div h2{
+    color: green;
+}
+
+header h2{
+    color: rgb(245, 94, 232);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div4{
+    display: flexbox;
+    align-content: space-between;
+    background-color: rgba(65, 65, 65, 0.904);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+p.a002{
+    color: green;
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 20px;
+    width: 1404px;
+}
+
+.a003{
+    float: left;
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-left: 38px;
+}
+
+.box01{
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+}
+
+.box01 .header{
+    background-color: #111;
+    color: #fff;
+    font-size: 25px;
+}
+
+.box01 .header .header-color{
+    background: rgb(0, 255, 13)
+}
+
+.box01 li {
+    padding: 20px;
+    border-bottom: 20px solid #eee;
+    text-align:center;
+}
+
+@media(max-width:768px) {
+    .col {
+        width: 100%;
+    }
+}
